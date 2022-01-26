@@ -19,7 +19,7 @@ extension MSMessagesAppViewController {
     /// *Called before the extension transitions to a new presentation style.*
     /// *Use this method to prepare for the change in presentation style.*
     override func willTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
-        OSLog.logEvent(.event)
+        OSLog.logEvent(.event, "MSMessage: Presentation Styles")
     }
     
     /// Tells the view controller that the extension has transitioned to a new presentation style.
@@ -34,6 +34,6 @@ extension MSMessagesAppViewController {
     /// *Called after the extension transitions to a new presentation style.*
     /// *Use this method to finalize any behaviors associated with the change in presentation style.*
     override func didTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
-        OSLog.logEvent(.event)
+        OSLog.logEvent(.event, "MSMessage: Presentation Styles")
     }
 }

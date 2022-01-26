@@ -18,7 +18,7 @@ extension MSMessagesAppViewController {
     ///
     /// *Use this method to configure the extension and restore previously stored state.*
     override func willBecomeActive(with conversation: MSConversation) {
-        OSLog.logEvent(.event)
+        OSLog.logEvent(.event, "MSMessage: Extension State")
     }
     
     /// Invoked after the Messages extension becomes active.
@@ -35,7 +35,7 @@ extension MSMessagesAppViewController {
     ///
     /// *Use this method to release shared resources, save user data, invalidate timers, and store enough state information to restore your extension to its current state in case it is terminated later.*
     override func didBecomeActive(with conversation: MSConversation) {
-        OSLog.logEvent(.event)
+        OSLog.logEvent(.event, "MSMessage: Extension State")
     }
     
     /// Invoked just before the message resigns its active status.
@@ -45,7 +45,7 @@ extension MSMessagesAppViewController {
     /// Override this method to perform any cleanup activities just before the Messages extension is dismissed. Avoid doing any time-consuming tasks in your implementation. This method should return as quickly as possible. Also, avoid making asynchronous calls, because the extension might terminate before the asynchronous tasks have completed.
     ///
     override func willResignActive(with conversation: MSConversation) {
-        OSLog.logEvent(.event)
+        OSLog.logEvent(.event, "MSMessage: Extension State")
     }
     
     /// Invoked after the message resigns its active status.
@@ -54,6 +54,6 @@ extension MSMessagesAppViewController {
     ///
     /// Override this method to perform any cleanup activities after the Messages extension has been dismissed. Avoid doing any time-consuming tasks in your implementation.
     override func didResignActive(with conversation: MSConversation) {
-        OSLog.logEvent(.event)
+        OSLog.logEvent(.event, "MSMessage: Extension State")
     }
 }
