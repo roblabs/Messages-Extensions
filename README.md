@@ -42,12 +42,26 @@ OSLog.logEvent(.end, "MSMessage")
 
 ## Example
 
-Example output with default message showing method and line number.  And an example with passing in variables to be printed.
+Filter with `MSMessage` to help cut the logs.
 
 ```console
 [com.roblabs.log-Messages], viewDidLoad(), line: 162, 📝
 [com.roblabs.log-Messages], viewWillLayoutSubviews(), line: 122, 📝
 [com.roblabs.log-Messages], viewDidLayoutSubviews(), line: 117, 📝
 [com.roblabs.log-Messages], viewWillAppear(_:), line: 137, 📝
+willBecomeActive(with:), line: 21, MSMessage: Extension State
+didBecomeActive(with:), line: 38, MSMessage: Extension State
+willTransition(to:), line: 22, MSMessage: Presentation Styles
+didTransition(to:), line: 37, MSMessage: Presentation Styles
+willResignActive(with:), line: 48, MSMessage: Extension State
+didResignActive(with:), line: 57, MSMessage: Extension State
+didStartSending(_:conversation:), line: 75, MSMessage: Tracking Messages
+willResignActive(with:), line: 48, MSMessage: Extension State
+didResignActive(with:), line: 57, MSMessage: Extension State
+willBecomeActive(with:), line: 21, MSMessage: Extension State
+didBecomeActive(with:), line: 38, MSMessage: Extension State
+didTransition(to:), line: 37, MSMessage: Presentation Styles
+willTransition(to:), line: 22, MSMessage: Presentation Styles
+didTransition(to:), line: 37, MSMessage: Presentation Styles
 [com.roblabs.log-Messages], collectionView(_:didSelectItemAt:), line: 260, message.summaryText: "New Message from iMessage App sent")
 ```
